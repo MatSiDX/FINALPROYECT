@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet" />
+        <link th:href="@{/css/estilos.css}" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="nav bg-white">
+            <img src="https://i.pinimg.com/originals/91/da/d8/91dad8979b4ecfbabd6110bbb10e32c7.jpg" style="width: 15%;height: 100%"/>
+
+        </nav>
+        <div class="container mt-5 p-5 w-30" style="background-color: rgba(2,  2, 0, 0.6);" >  
+            <div class="container  mt-2 p-4" style="background-color: rgba(4,123, 7, 0.4);"> 
+
+                <div class="container">
+                    <h3 class="text-center text-white">CREA TU CUENTA</h3>
+                    <div class="row">
+                        <div class="col">
+                            <div class="col-12">
+                                <h5 class="text-white">DNI</h5>
+                                <div><input type="text" class="form-control" placeholder="DNI"></div>
+                                <h5 class="text-white">APELLIDO PATERNO</h5>
+                                <div><input type="text" class="form-control" placeholder="Apellido Paterno"></div>
+                                <h5 class="text-white">CORREO</h5>
+                                <div><input type="text" class="form-control" placeholder="Correo"></div>
+                                <h5 class="text-white">DISTRITO</h5>
+                                <div class="mb-3">
+                                    <select id="select1" class="form-select">
+                                        <option value="1">Sellecione una opción</option>
+                                        <option value="2">CHACLACAYO</option>
+                                    </select>
+                                </div>
+                                <h5 class="text-white">FECHA DE NACIMIENTO</h5>
+                                <input type="date" id="start" name="trip-start"
+                                       value="yyyy-mm-dd"
+                                       min="1960-01-01" max="2022-12-31" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col-12">
+                                <h5 class="text-white">NOMBRES</h5>
+                                <div><input type="text" class="form-control" placeholder="Nombres"></div>
+                                <h5 class="text-white">APELLIDO MATERNO</h5>
+                                <div><input type="text" class="form-control" placeholder="Apellido Materno"></div>
+                                <h5 class="text-white">TELÉFONO</h5>
+                                <div><input type="text" class="form-control" placeholder="Teléfono"></div>
+                                <h5 class="text-white">DIRECCIÓN</h5>
+                                <div><input type="text" class="form-control" placeholder="Dirección"></div>
+
+                                <div><form method="POST">
+                                        <h5 class="text-white">CONTRASEÑA</h5>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <input class="form-control" type="password" name="password" id="password">
+                                            </div>
+                                            <div class="col">
+                                                <button class="btn btn-primary" type="button" onclick="mostrarContrasena()">Mostrar Contraseña</button>
+                                            </div>
+                                        </div>
+                                    </form></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form  th:action="@{/}" class="mb-3 d-flex justify-content-center mt-3" >
+                        <div  class="d-grid gap-2 h-auto" >                    
+                            <input  type="submit" value="Registrarme" class="btn" style="background-color: rgb(247,180,0)">
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+    </body>
+</html>

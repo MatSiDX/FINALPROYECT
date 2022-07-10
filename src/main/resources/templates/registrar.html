@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+    <head th:replace="layout/layout :: head">
+        <title>REGISTRAR OS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background-image: url(https://contigotv.pe/wp-content/uploads/2021/04/Chaclacayo-Lima-10.jpg) ; height: auto;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;">
+        <div class="container-fluid mt-2" style="background-color: rgb(252,230,64); border-radius: 20px; height: 800px" layout:fragment="page-content">  
+            <div class="">
+                <div class="container" style="width: 730px; align-content:  center">
+                    <b style="font-size: 40px">REGISTRAR ORGANIZACION SOCIAL</b>
+                </div>
+                <div class="d-grid gap-5 d-md-flex justify-content-md-center"style="margin-top: 30px; margin-left: 30px; width: 800px; height: 500px">                    
+                    <div style="font-size: 25px">                        
+                        <b style="color: green">NOMBRE DE LA ORGANIZACION SOCIAL</b>
+                        <div class="col row-cols"><input type="text"style="width: 240px; border-radius: 5px"></div>
+                        <b style="color: green">TIPO DE ORGANIZACIÒN</b>
+                        <div class="col row-cols"><input type="text"style="width: 240px; border-radius: 5px"></div>
+                        <b style="color: green">DIRECCIÒN</b>
+                        <div class="col row-cols"><input type="text"style="width: 240px; border-radius: 5px"></div>
+                        <b style="color: green">Nro CONTACTO</b>
+                        <div class="col row-cols"><input type="text"style="width: 240px; border-radius: 5px"></div>                        
+                    </div>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end" >
+                    <a class="btn btn-primary" th:href="@{/auth/main}" role="button">CANCELAR</a>
+                    <a class="btn btn-primary" th:href="@{/auth/main/registrar2}" role="button">CONTINUAR</a>
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>
