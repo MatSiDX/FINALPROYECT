@@ -24,6 +24,7 @@ public class HomeController {
         model.addAttribute("titulo", "Bienvenido a Thymeleaf");
         return "main";
     }
+    
 
     @GetMapping("/register")
     public String register() {
@@ -36,4 +37,5 @@ public class HomeController {
         return "contrasena";
 
     }
+    
 }

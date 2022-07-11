@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package pe.org.chaclacayo.pyfinal2.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,22 +18,23 @@ public class SecurityConfigConfiguration extends WebSecurityConfigurerAdapter {
     private UserDetailsService userDetailsService;
 
     @Bean
-    public BCryptPasswordEncoder passwordEncoder(){
+    public BCryptPasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
-    
+
     @Autowired
-    public void configurerGlobal(AuthenticationManagerBuilder build) throws Exception{
+    public void configurerGlobal(AuthenticationManagerBuilder build) throws Exception {
         build.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
     }
-    
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/autor", "/editorial", "/libro").hasRole("USER")
-                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("ADMIN")                
+                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("PV")
+                .antMatchers("/autor/**", "/editorial/**", "/libro/**").hasRole("DS")
                 .antMatchers("/")
-                .hasAnyRole("USER", "ADMIN")
+                .hasAnyRole("USER", "PV","DS")
                 .and()
                 .formLogin()
                 .loginPage("/login")

@@ -1,10 +1,11 @@
 body{
-  background-image: url(https://contigotv.pe/wp-content/uploads/2021/04/Chaclacayo-Lima-10.jpg) ;
-  height: 65rem;
+  background-image: url(http://www.munichaclacayo.gob.pe/portals/slider/imagenes/3.jpg) ;
+  height: 80rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;    
+}
 
 a{
     text-decoration: none;

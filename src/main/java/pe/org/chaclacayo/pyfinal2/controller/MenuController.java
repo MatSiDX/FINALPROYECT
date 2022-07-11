@@ -48,12 +48,8 @@ public class MenuController {
         @GetMapping("/registrar2")
     public String registrar2(){
         return "registrar2";
-    }
+    }   
     
-        @GetMapping("/registrar3")
-    public String registrar3(){
-        return "registrar3";
-    }
     
     @GetMapping("/perfil")
     public String perfil(){

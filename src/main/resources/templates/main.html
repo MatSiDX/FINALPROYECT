@@ -1,8 +1,6 @@
+
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
+
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/layout}">
@@ -11,9 +9,37 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="background-color: rgb(252,230,64);">
-        <div>
-            
+    <body style="
+  background-image: url(http://www.munichaclacayo.gob.pe/portals/slider/imagenes/3.jpg) ;
+  height: 80rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+">
+        <div layout:fragment="page-content">
+            <br><br><br><br><br><br><br>           
+            <div>
+                <br>
+                <div>
+                    <center><a class="btn btn-primary" th:href="@{/auth/main/registrar}" sec:authorize="hasRole('ROLE_USER')" role="button" style="width: 350px; font-size: 20px; border-radius: 20px">REGISTRAR ORGANIZACION SOCIAL</a></center>                
+                </div>
+                <br>
+                <div>
+                    <center>
+                        <a class="btn btn-primary" th:href="@{/auth/main/mainmp}" sec:authorize="hasRole('ROLE_PV')"role="button" style="width: 350px; font-size: 20px; border-radius: 20px">VERIFICAR SOLICITUDES</a>
+                        <a class="btn btn-primary" th:href="@{/auth/main/mainpv}" sec:authorize="hasRole('ROLE_PV')"role="button" style="width: 350px; font-size: 20px; border-radius: 20px">GENERAR INFORME TECNICO</a>
+                    </center>                
+                </div>
+                <br>
+                <div>                   
+                        <center><a class="btn btn-primary" th:href="@{/auth/main/mainds}" sec:authorize="hasRole('ROLE_DS')" role="button" style="width: 350px; font-size: 20px; border-radius: 20px">GENERAR RESOLUCIÓN</a></center>               
+                </div>
+                <br>
+                <br>
+            </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

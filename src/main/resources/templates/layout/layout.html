@@ -22,35 +22,16 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" th:href="@{/auth/main}" style="color: white"><i class="fa-solid fa-house fa-2x"></i></a>
                             </li>
-                            <li class="nav-link">
-                                <a class="nav-link active" aria-current="page" th:href="@{/auth/main/mainmp}" style="color: white">
-                                    <span class="">VERIFICAR SOLICITUDES SOCIAL</span>
-                                </a>
-                            </li>
-                            <li class="nav-link">
-                                <a class="nav-link active" aria-current="page" th:href="@{/auth/main/mainpv}" style="color: white">
-                                    <span class="">GENERAR INFORME TECNICO</span>
-                                </a>
-                            </li>
-                            <li class="nav-link">
-                                <a class="nav-link active" aria-current="page" th:href="@{/auth/main/mainds}" style="color: white">
-                                    <span class="">RESOLUCIÓN</span>
-                                </a>
-                            </li>  
+
                         </ul>
                         <ul class="navbar-nav mb-1 mb-lg-0">
-                            <li class="nav-link">
-                                <a class="nav-link active" aria-current="page" th:href="@{/auth/main/registrar}" style="color: white">
-                                    <span class="">REGISTRAR ORGANIZACIÓN SOCIAL</span>
-                                </a>
-                            </li>
-                            <li class="nav-link dropdown">
+                            <li class="nav-link dropstart">
                                 <b class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
                                     USER</b>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" th:href="@{/auth/main/perfil}">Perfil</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" th:href="@{/login}">Salir</a></li>
+                                    <li><a class="dropdown-item" th:href="@{/login}">Cerrar Sesion</a></li>
                                 </ul>
                             </li>
                         </ul>
