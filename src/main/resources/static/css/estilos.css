@@ -4,9 +4,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  overflow: hidden;  
-}
+  position: relative; }
 
 a{
     text-decoration: none;

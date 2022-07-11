@@ -12,25 +12,25 @@
     <body>    
         <nav class="nav bg-white">
             <img src="https://i.pinimg.com/originals/91/da/d8/91dad8979b4ecfbabd6110bbb10e32c7.jpg" style="width: 15%;height: 100%"/>
-                       
+
         </nav>
 
         <div class="container mt-5 p-5 w-25" style="background-color: rgba(2,  2, 0, 0.6);" >  
-            <div class="container  mt-2 p-4" style="background-color: rgba(4,123, 7, 0.4);"> 
+            <div class="container  mt-1 p-" style="background-color: rgba(4,123, 7, 0.4);"> 
 
-                <img  class="mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Escudo_de_Chaclacayo.png/1200px-Escudo_de_Chaclacayo.png" width="50%"/>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-white">DNI</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su número de DNI">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-white">CONTRASEÑA</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput2" placeholder="Ingrese su contraseña">
-                </div>
-                <form  th:action="@{/auth/main/mainpv}" class="mb-3 d-flex justify-content-center " >
-                    <div  class="d-grid gap-2 h-auto" >                    
+                <form method="POST" th:action="@{/login}" class=" p-5 rounded-start">
+                    <img  class="mx-auto d-block" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Escudo_de_Chaclacayo.png/1200px-Escudo_de_Chaclacayo.png" width="50%"/>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-white">USUARIO</label>
+                        <input type="text" class="form-control" id="username" name="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-white">CONTRASEÑA</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                    </div>                
+                    <div  class="d-grid gap-2 h-auto mb-3 d-flex justify-content-center" >                    
                         <input  type="submit" value="Iniciar sesión" class="btn" style="background-color: rgb(247,180,0)">
-                    </div>  
+                    </div> 
                 </form>
                 <div class="mb-3 w-100 text-center mt-3">
                     <a th:href="@{/register}" class="text-info">¿No tienes una cuenta?</a>
