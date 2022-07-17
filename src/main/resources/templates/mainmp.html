@@ -9,139 +9,165 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="background-color: rgb(252,230,64)">
-        <div class="container-fluid mt-2"  layout:fragment="page-content">
+    <body class="bg-dark">
+        <div class="container-fluid mt-2 d-grid"  layout:fragment="page-content">
             <div class="row">
-                <div class="container col-11 row-cols-2" style="margin-top: 20px" >
-                    <div class="row">
-                        <div class="col-12 justify-content-around"  style="background-color: rgb(1, 155, 8); border-radius: 4px" ><<center><h3>SOLICITUDES ENTRANTES</h3></center><</div>
+                <div class="container col-6 row-cols-2" style="margin-top: 20px">
+                    <div class="container-fluid" style="background-color: green"><center><b style="color: white; font-size: 30px">SOLICITUDES ENTRANTES</b></center></div>                   
+                    <br>
+                </div>
+                <div class="container-fluid row-cols-md-2">
+                    <div class="container-fluid">
+                        <table class="table" style="color: white; width: 900px; border: solid black 2px">                           
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nbr ORGANIZACION SOCIAL</th>
+                                    <th scope="col">PRESIDENTE</th>
+                                    <th scope="col">DIRECCIÓN</th>     
+                                    <th scope="col">TIPO DE ORGANIZACIÓN</th>
+                                </tr>
+                            </thead>
+                            <tbody>                            
+                                <tr class="col-8 btn-primary alert"  
+                                    data-bs-toggle="modal" href="#exampleModalToggle" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">1</th>
+                                    <th scope="col">ORGANIZACIÓN PUEBLA</th>
+                                    <th scope="col">Elias Cabanillas Astochado</th>                                                    
+                                    <th scope="col">Jr. Los Olivos</th>
+                                    <th scope="col">Deportiva</th> 
+                                </tr>
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">2</th>
+                                    <th scope="col">ORGANIZACIÒN RONDA</th>
+                                    <th scope="col">Juan Ramirez Sabedra</th>                                                    
+                                    <th scope="col">Jr. 2 de Junio</th>
+                                    <th scope="col">Economica</th> 
+                                </tr>
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">3</th>
+                                    <th scope="col">ORGANIZACION ORIGEN</th>
+                                    <th scope="col">Marta Mendoza Paredes</th>                                                    
+                                    <th scope="col">Jr. El campos</th>
+                                    <th scope="col">Apoyo alimentario</th> 
+                                </tr>
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">4</th>
+                                    <th scope="col">ORGANIZACION FUENTE</th>
+                                    <th scope="col">Ester Cifuentes Ricra</th>                                                    
+                                    <th scope="col">Jr. Olivos</th>
+                                    <th scope="col">Tematica</th> 
+                                </tr>                            
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">5</th>
+                                    <th scope="col">ORGANIZACION ESTELA</th>
+                                    <th scope="col">Mathieu Benavente Espinoza</th>                                                    
+                                    <th scope="col">Jr. Las Gardenias</th>
+                                    <th scope="col">Deportiva</th> 
+                                </tr>                                
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="row">
-                        <div class="col-6 btn-primary alert"  data-bs-toggle="modal" href="#exampleModalToggle" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">ORGANIZACION SOCIAL PUEBLA</h4>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">ORGANIZACION SOCIAL RONDA</h4></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">ORGANIZACION SOCIAL ORIGEN</h4></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">ORGANIZACION SOCIAL FUENTE</h4></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">ORGANIZACION SOCIAL ESTELA</h4></div>
-                    </div>
-                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="container" style="margin-left: 268px; margin-top: 85px; height: 800px">
-                            <div class="modal-dialog modal-fullscreen modal-dialog-centered" style="width:1296px">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalToggleLabel">ORGANIZACION PUEBLA</h5>                                    
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <table class="table" style="width: 800px; border: solid black 2px">
-                                            <b>Junta directiva</b>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">ID</th>
-                                                    <th scope="col">NOMBRE</th>
-                                                    <th scope="col">APELLIDOS</th>
-                                                    <th scope="col">DNI</th>     
-                                                    <th scope="col">CARGO</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody> 
-                                                <tr>
-                                                    <th scope="col">1</th>
-                                                    <th scope="col">Elias</th>
-                                                    <th scope="col">Cabanillas Astochado</th>                                                    
-                                                    <th scope="col">74859645</th>
-                                                    <th scope="col">Presidente</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">2</th>
-                                                    <th scope="col">Juan</th>
-                                                    <th scope="col">Ramirez Sabedra</th>                                                    
-                                                    <th scope="col">75815985</th>
-                                                    <th scope="col">Vice Presidentee</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">3</th>
-                                                    <th scope="col">Marta</th>
-                                                    <th scope="col">Mendoza Paredes</th>                                                    
-                                                    <th scope="col">717258965</th>
-                                                    <th scope="col">Secretario</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">4</th>
-                                                    <th scope="col">MEster</th>
-                                                    <th scope="col">Cifuentes Ricra</th>                                                    
-                                                    <th scope="col">70526485</th>
-                                                    <th scope="col">Vocal</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">4</th>
-                                                    <th scope="col">Ester</th>
-                                                    <th scope="col">Cifuentes Ricra</th>                                                    
-                                                    <th scope="col">70526485</th>
-                                                    <th scope="col">Vocal</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">5</th>
-                                                    <th scope="col">Mathieu</th>
-                                                    <th scope="col">Benavente Espinoza</th>                                                    
-                                                    <th scope="col">70526485</th>
-                                                    <th scope="col">Vocal</th> 
-                                                </tr>                                                
-                                            </tbody>
-                                        </table>
-                                        <br><br><br><br>
-                                        <div class="container d-flex" style="gap: 30px">
-                                            <div class="d-grid gap-2 col-6 mx-auto">
-                                                <button class="btn btn-primary" type="button">Nomina de la Junta Directiva</button><br>
-                                                <button class="btn btn-primary" type="button">Libro de Actas</button>
-                                            </div>
-                                            <div class="d-grid gap-2 col-6 mx-auto">
-                                                <button class="btn btn-primary" type="button">Padrón</button><br>
-                                                <button class="btn btn-primary" type="button">Acta de Constitución</button>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>CONTINUAR</b></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade w-100 h-100" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    ¿ACEPTAR O RECHAZAR?
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">REGRESAR</button>
-                                    <a class="btn btn-primary btn-danger" th:href="@{/auth/main/mainmp}" role="button">RECHAZAR</a>
-                                    <a class="btn btn-primary" style="background-color: green" th:href="@{/auth/main/mainmp}" role="button">ACEPTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                     
                 </div>
             </div>
-        </div>
+            <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="container" style="margin-left: 280px; margin-top: 80px; height: 670px">
+                    <div class="modal-dialog modal-fullscreen modal-dialog-centered" style="width:1296px">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel">ORGANIZACION PUEBLA</h5>                                    
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <br>
+                            <b style="margin-left: 4rem; font-size: 20px"> Miembros de la Junta directiva</b>  
+                            <br>
+                            <div class="modal-body">
+                                <table class="table" style="width: 1000px; border: solid black 2px; margin-left: 9.5rem">                                                                     
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">NOMBRE</th>
+                                            <th scope="col">APELLIDOS</th>
+                                            <th scope="col">DNI</th>     
+                                            <th scope="col">CARGO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <th scope="col">1</th>
+                                            <th scope="col">Elias</th>
+                                            <th scope="col">Cabanillas Astochado</th>                                                    
+                                            <th scope="col">74859645</th>
+                                            <th scope="col">Presidente</th> 
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">2</th>
+                                            <th scope="col">Juan</th>
+                                            <th scope="col">Ramirez Sabedra</th>                                                    
+                                            <th scope="col">75815985</th>
+                                            <th scope="col">Vice Presidentee</th> 
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">3</th>
+                                            <th scope="col">Marta</th>
+                                            <th scope="col">Mendoza Paredes</th>                                                    
+                                            <th scope="col">71725896</th>
+                                            <th scope="col">Secretario</th> 
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">4</th>
+                                            <th scope="col">Ester</th>
+                                            <th scope="col">Cifuentes Ricra</th>                                                    
+                                            <th scope="col">70526485</th>
+                                            <th scope="col">Vocal</th> 
+                                        </tr>                                        
+                                        <tr>
+                                            <th scope="col">5</th>
+                                            <th scope="col">Mathieu</th>
+                                            <th scope="col">Benavente Espinoza</th>                                                    
+                                            <th scope="col">70526485</th>
+                                            <th scope="col">Vocal</th> 
+                                        </tr>                                                
+                                    </tbody>
+                                </table>
+                            </div>                            
+                            <b style="margin-left: 4rem; font-size: 20px"> Documentos Adjuntados</b>  
+                            <br>
+                            <div class="container d-flex" style="gap: 5px">
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn-dark" style=" background-color: green"type="button">Nomina de la Junta Directiva</button><br>
+                                    <button class="btn-dark" type="button">Libro de Actas</button>
+                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn-dark btn-primary" type="button">Padrón</button><br>
+                                    <button class="btn-dark" style=" background-color: green" type="button">Acta de Constitución</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>CONTINUAR</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade w-100 h-100" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¿ACEPTAR O RECHAZAR?
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">REGRESAR</button>
+                            <a class="btn btn-primary btn-danger" th:href="@{/auth/main/mainmp}" role="button">RECHAZAR</a>
+                            <a class="btn btn-primary" style="background-color: green" th:href="@{/auth/main/mainmp}" role="button">ACEPTAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>                     
+        </div>      
     </body>
 </html>

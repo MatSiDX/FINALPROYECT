@@ -9,67 +9,74 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body class="bg-dark">
+    <body class="">
         <div class="container-fluid mt-2 d-grid"  layout:fragment="page-content">
             <div class="row">
-                <div class="container col-6 row-cols-2" style="margin-top: 20px">
-                    <div class="container-fluid" style="background-color: green"><center><b style="color: white; font-size: 30px">SOLICITUDES ENTRANTES</b></center></div>                   
+                <div class="container col-6 row-cols-2" style="margin-top: 20px;margin-left: 550px">
+                    <div class="container-fluid" style="background-color: green"><center><b style="color: white; font-size: 30px">ORGANIZACIONES SOCIALES</b></center></div>                   
                     <br>
                 </div>
-                <div class="container-fluid row-cols-md-2">
+                <div class="container-fluid row-cols-md-1"style="margin-left: 350px">
                     <div class="container-fluid">
-                        <table class="table" style="color: white; width: 1000px; border: solid black 2px">                           
+                        <table class="table" style=" width: 1200px; border: solid black 2px">                           
                             <thead>
                                 <tr>
                                     <th scope="col">ID</th>
                                     <th scope="col">Nbr ORGANIZACION SOCIAL</th>
-                                    <th scope="col">PRESIDENTE</th>
-                                    <th scope="col">DIRECCIÓN</th>     
                                     <th scope="col">TIPO DE ORGANIZACIÓN</th>
-                                    <th scope="col">VERIFICADO</th>
+                                    <th scope="col">DIRIGENTE</th>
+                                    <th scope="col">FECHA DE ENTREGA</th>
+                                    <th scope="col">FECHA DE INFORME</th> 
+                                    <th scope="col">VIGENCIA</th> 
+
                                 </tr>
                             </thead>
                             <tbody>                            
                                 <tr class="col-8 btn-primary alert"  
-                                    data-bs-toggle="modal" href="#exampleModalToggle" style="background-color: rgb(180, 180, 180); color: green">
+                                    data-bs-toggle="modal" href="#exampleModalToggle" style="background-color: rgb(180, 180, 180); color: black">
                                     <th scope="col">1</th>
                                     <th scope="col">ORGANIZACIÓN PUEBLA</th>
-                                    <th scope="col">Elias Cabanillas Astochado</th>                                                    
-                                    <th scope="col">Jr. Los Olivos</th>
-                                    <th scope="col">Deportiva</th> 
-                                    <th scope="col" style="font-size: 20px"><i class="fa-solid fa-square-check" style="margin-left: 35px"></i></th>
+                                    <th scope="col">Elias</th>
+                                    <th scope="col">Deportiva</th>                                                    
+                                    <th scope="col">07/07/2022</th>
+                                    <th scope="col">11/07/2022</th>
+                                    <th scope="col">ACTIVA</th>                                     
                                 </tr>
-                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: black">
                                     <th scope="col">2</th>
                                     <th scope="col">ORGANIZACIÒN RONDA</th>
-                                    <th scope="col">Juan Ramirez Sabedra</th>                                                    
-                                    <th scope="col">Jr. 2 de Junio</th>
-                                    <th scope="col">Economica</th> 
-                                    <th scope="col" style="font-size: 20px"><i class="fa-solid fa-square-check" style="margin-left: 35px"></i></th>
+                                    <th scope="col">Cesar</th>
+                                    <th scope="col">Economica</th>                                                    
+                                    <th scope="col">07/07/2022</th>
+                                    <th scope="col">12/07/2022</th>
+                                    <th scope="col">ACTIVA</th>
                                 </tr>
-                                <tr style="background-color: rgb(180, 180, 180); color: green">
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: black">
                                     <th scope="col">3</th>
                                     <th scope="col">ORGANIZACION ORIGEN</th>
-                                    <th scope="col">Marta Mendoza Paredes</th>                                                    
-                                    <th scope="col">Jr. El campos</th>
-                                    <th scope="col">Apoyo alimentario</th> 
-                                    <th scope="col" style="font-size: 20px"><i class="fa-regular fa-square" style="margin-left: 35px"></i></th>
+                                    <th scope="col">Juan</th>
+                                    <th scope="col">Apoyo alimetario</th>                                                    
+                                    <th scope="col">05/07/2022</th>
+                                    <th scope="col">05/07/2022</th>
+                                    <th scope="col">ACTIVA</th>
                                 </tr>
-                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: black">
                                     <th scope="col">4</th>
                                     <th scope="col">ORGANIZACION FUENTE</th>
-                                    <th scope="col">Ester Cifuentes Ricra</th>                                                    
-                                    <th scope="col">Jr. Olivos</th>
-                                    <th scope="col">Tematica</th> 
-                                    <th scope="col" style="font-size: 20px"><i class="fa-solid fa-square-check" style="margin-left: 35px"></i></th>
+                                    <th scope="col">Omar</th>
+                                    <th scope="col">Tematica</th>                                                    
+                                    <th scope="col">15/07/2022</th>
+                                    <th scope="col">20/07/2022</th>
+                                    <th scope="col">ACTIVA</th>
                                 </tr>                            
-                                <tr style="background-color: rgb(180, 180, 180); color: green">
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: black">
                                     <th scope="col">5</th>
                                     <th scope="col">ORGANIZACION ESTELA</th>
-                                    <th scope="col">Mathieu Benavente Espinoza</th>                                                    
-                                    <th scope="col">Jr. Las Gardenias</th>
-                                    <th scope="col">Deportiva</th> 
-                                    <th scope="col" style="font-size: 20px"><i class="fa-regular fa-square" style="margin-left: 35px"></i></th>
+                                    <th scope="col">Francisco</th>
+                                    <th scope="col">Deportiva</th>                                                    
+                                    <th scope="col">01/08/2022</th>
+                                    <th scope="col">02/08/2022</th> 
+                                    <th scope="col">ACTIVA</th>
                                 </tr>                                
                             </tbody>
                         </table>
@@ -150,7 +157,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>GENERAR INFORME TECNICO</b></button>
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>VISUALIZAR INFORME TECNICO</b></button>
                             </div>
                         </div>
                     </div>
@@ -166,25 +173,24 @@
                         <div class="modal-body">
                             <div style="margin: 10px">                                    
                                 <b>Fecha</b>
-                                <div class="col row-cols"><span class="class">DD:MM:YYYY</span></div>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">DD:MM:YYYY</span></div>
                                 <b>HORA DE ENTREGA</b>
-                                <div class="col row-cols"><span class="class">00:00:00</span></div>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">00:00:00</span></div>
                                 <b>ASUNTO</b>
-                                <div class="col row-cols"><input type="text"style="width: 400px; border-radius: 5px"></div>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">Registrasce como organizacion reconocida por la municipalidad</span></div>
                                 <b>EXPOSICION DE HECHOS</b>
-                                <div class="col row-cols"><input type="text"style="width: 400px; height: 60px; border-radius: 5px"></div>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">El pasado 07 de julio de 2022, la ORGANIZACION PUEBLA emitio su solicitud para su reconocimiento, por la cual se tomo como vigencia el dia dado.</span></div>
                                 <b>ANÀLISIS DE SITUACIÒN</b>
-                                <div class="col row-cols"><input type="text"style="width: 400px; height: 60px; border-radius: 5px"></div>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">Se concluyo que la ORGANIZACION PUEBLA se dedicaba a las actividades deportivas.</span></div>
                                 <b>RESULTAODS OBTENIDOS</b>
-                                <div class="col row-cols"><input type="text"style="width: 400px; height: 60px; border-radius: 5px"></div>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">La vigencia entra en inicio desde el dia 07 julio de 2022 y es concretada hoy 11 de julio de 2022 su reconocimiento por la municipalidad.</span></div>
                                 <b>RECOMENDACIONES O CONCLUSIONES</b>
-                                <div class="col row-cols"><input type="text"style="width: 400px; height: 60px; border-radius: 5px"></div>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">Ninguna encontrada.</span></div>
                             </div>                     
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">REGRESAR</button>
-                            <a class="btn btn-primary btn-danger" th:href="@{/auth/main/mainpv}" role="button">DESCARTAR</a>
-                            <a class="btn btn-primary" style="background-color: green" th:href="@{/auth/main/mainpv}" role="button">GENERAR</a>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">CERRAR</button>
                         </div>
                     </div>
                 </div>

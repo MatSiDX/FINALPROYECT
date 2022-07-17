@@ -9,138 +9,180 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body style="background-color: rgb(252,230,64)">
-        <div class="container-fluid mt-2"  layout:fragment="page-content">
+    <body class="bg-dark">
+        <div class="container-fluid mt-2 d-grid"  layout:fragment="page-content">
             <div class="row">
-                <div class="container col-11 row-cols-2" style="margin-top: 20px" >
-                    <div class="row">
-                        <div class="col-12 justify-content-around"  style="background-color: rgb(1, 155, 8); border-radius: 4px" ><center><h3>INFORMES ENTRANTES</h3></center></div>
+                <div class="container col-6 row-cols-2" style="margin-top: 20px">
+                    <div class="container-fluid" style="background-color: green"><center><b style="color: white; font-size: 30px">INFORMES ENTRANTES</b></center></div>                   
+                    <br>
+                </div>
+                <div class="container-fluid row-cols-md-2">
+                    <div class="container-fluid">
+                        <table class="table" style="color: white; width: 830px; border: solid black 2px">                           
+                            <thead>
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nbr ORGANIZACION SOCIAL</th>
+                                    <th scope="col">TIPO DE ORGANIZACIÓN</th> 
+                                    <th scope="col">FECHA DE ENTREGA</th>
+                                    <th scope="col">FECHA DE INFORME</th>     
+                                                                       
+                                </tr>
+                            </thead>
+                            <tbody>                            
+                                <tr class="col-8 btn-primary alert"  
+                                    data-bs-toggle="modal" href="#exampleModalToggle" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">1</th>
+                                    <th scope="col">ORGANIZACIÓN PUEBLA</th>
+                                    <th scope="col">Deportiva</th>                                                    
+                                    <th scope="col">07/07/2022</th>
+                                    <th scope="col">11/07/2022</th>                                    
+                                </tr>
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">2</th>
+                                    <th scope="col">ORGANIZACIÒN RONDA</th>
+                                    <th scope="col">Economicaa</th>                                                    
+                                    <th scope="col">07/07/2022</th>
+                                    <th scope="col">12/07/2022</th>                                    
+                                </tr>
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">3</th>
+                                    <th scope="col">ORGANIZACION ORIGEN</th>
+                                    <th scope="col">Apoyo alimetario</th>                                                    
+                                    <th scope="col">05/07/2022</th>
+                                    <th scope="col">05/07/2022</th>                                    
+                                </tr>
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">4</th>
+                                    <th scope="col">ORGANIZACION FUENTE</th>
+                                    <th scope="col">Tematica</th>                                                    
+                                    <th scope="col">15/07/2022</th>
+                                    <th scope="col">20/07/2022</th>                                    
+                                </tr>                            
+                                <tr class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); color: green">
+                                    <th scope="col">5</th>
+                                    <th scope="col">ORGANIZACION ESTELA</th>
+                                    <th scope="col">Deportiva</th>                                                    
+                                    <th scope="col">01/08/2022</th>
+                                    <th scope="col">02/08/2022</th>                                    
+                                </tr>                                
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="row">
-                        <div class="col-8 btn-primary alert"  data-bs-toggle="modal" href="#exampleModalToggle" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">INFORME ORGANIZACION SOCIAL PUEBLA</h4>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">INFORME ORGANIZACION SOCIAL RONDA</h4></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">INFORME ORGANIZACION SOCIAL ORIGEN</h4></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">INFORME ORGANIZACION SOCIAL FUENTE</h4></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-8 btn-primary alert" style="background-color: rgb(180, 180, 180); margin: 5px"><h4 class="col-12" style="color: black">INFORME ORGANIZACION SOCIAL ESTELA</h4></div>
-                    </div>
-                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="container" style="margin-left: 268px; margin-top: 85px; height: 800px">
-                            <div class="modal-dialog modal-fullscreen modal-dialog-centered" style="width:1296px;">
-                                <div class="modal-content"style=" background-color: black; color: white">
-                                    <div class="modal-header" style="color: white">
-                                        <h5 class="modal-title" id="exampleModalToggleLabel">ORGANIZACION PUEBLA</h5>                                    
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body" style="color: white">
-                                        <table class="table" style="width: 800px; border: solid white 2px; color: white">
-                                            <b>Junta directiva</b>
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">ID</th>
-                                                    <th scope="col">NOMBRE</th>
-                                                    <th scope="col">APELLIDOS</th>
-                                                    <th scope="col">DNI</th>     
-                                                    <th scope="col">CARGO</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody> 
-                                                <tr>
-                                                    <th scope="col">1</th>
-                                                    <th scope="col">Elias</th>
-                                                    <th scope="col">Cabanillas Astochado</th>                                                    
-                                                    <th scope="col">74859645</th>
-                                                    <th scope="col">Presidente</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">2</th>
-                                                    <th scope="col">Juan</th>
-                                                    <th scope="col">Ramirez Sabedra</th>                                                    
-                                                    <th scope="col">75815985</th>
-                                                    <th scope="col">Vice Presidentee</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">3</th>
-                                                    <th scope="col">Marta</th>
-                                                    <th scope="col">Mendoza Paredes</th>                                                    
-                                                    <th scope="col">717258965</th>
-                                                    <th scope="col">Secretario</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">4</th>
-                                                    <th scope="col">Ester</th>
-                                                    <th scope="col">Cifuentes Ricra</th>                                                    
-                                                    <th scope="col">70526485</th>
-                                                    <th scope="col">Vocal</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">4</th>
-                                                    <th scope="col">Ester</th>
-                                                    <th scope="col">Cifuentes Ricra</th>                                                    
-                                                    <th scope="col">70526485</th>
-                                                    <th scope="col">Vocal</th> 
-                                                </tr>
-                                                <tr>
-                                                    <th scope="col">5</th>
-                                                    <th scope="col">Mathieu</th>
-                                                    <th scope="col">Benavente Espinoza</th>                                                    
-                                                    <th scope="col">70526485</th>
-                                                    <th scope="col">Vocal</th> 
-                                                </tr>                                                
-                                            </tbody>
-                                        </table>
-                                        <br><br><br><br>
-                                        <div class="container d-flex" style="gap: 30px">
-                                            <div class="d-grid gap-2 col-6 mx-auto">
-                                                <button class="btn btn-primary" type="button">Nomina de la Junta Directiva</button><br>
-                                                <button class="btn btn-primary" type="button">Libro de Actas</button>
-                                            </div>
-                                            <div class="d-grid gap-2 col-6 mx-auto">
-                                                <button class="btn btn-primary" type="button">Padrón</button><br>
-                                                <button class="btn btn-primary" type="button">Acta de Constitución</button>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>GENERAR RESOLUCIÒN</b></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal fade w-100 h-100" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalToggleLabel2"></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Acepte para continuar
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">REGRESAR</button>                                    
-                                    <a class="btn btn-primary" style="background-color: green" th:href="@{/auth/main/mainds}" role="button">ACEPTAR</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                     
                 </div>
             </div>
-        </div>
+            <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="container" style="margin-left: 280px; margin-top: 80px; height: 670px">
+                    <div class="modal-dialog modal-fullscreen modal-dialog-centered" style="width:1296px">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel">ORGANIZACION PUEBLA</h5>                                    
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <br>
+                            <b style="margin-left: 4rem; font-size: 20px"> Miembros de la Junta directiva</b>  
+                            <br>
+                            <div class="modal-body">
+                                <table class="table" style="width: 1000px; border: solid black 2px; margin-left: 9.5rem">                                                                     
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">ID</th>
+                                            <th scope="col">NOMBRE</th>
+                                            <th scope="col">APELLIDOS</th>
+                                            <th scope="col">DNI</th>     
+                                            <th scope="col">CARGO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr>
+                                            <th scope="col">1</th>
+                                            <th scope="col">Elias</th>
+                                            <th scope="col">Cabanillas Astochado</th>                                                    
+                                            <th scope="col">74859645</th>
+                                            <th scope="col">Presidente</th> 
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">2</th>
+                                            <th scope="col">Juan</th>
+                                            <th scope="col">Ramirez Sabedra</th>                                                    
+                                            <th scope="col">75815985</th>
+                                            <th scope="col">Vice Presidentee</th> 
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">3</th>
+                                            <th scope="col">Marta</th>
+                                            <th scope="col">Mendoza Paredes</th>                                                    
+                                            <th scope="col">71725896</th>
+                                            <th scope="col">Secretario</th> 
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">4</th>
+                                            <th scope="col">Ester</th>
+                                            <th scope="col">Cifuentes Ricra</th>                                                    
+                                            <th scope="col">70526485</th>
+                                            <th scope="col">Vocal</th> 
+                                        </tr>                                        
+                                        <tr>
+                                            <th scope="col">5</th>
+                                            <th scope="col">Mathieu</th>
+                                            <th scope="col">Benavente Espinoza</th>                                                    
+                                            <th scope="col">70526485</th>
+                                            <th scope="col">Vocal</th> 
+                                        </tr>                                                
+                                    </tbody>
+                                </table>
+                            </div>                            
+                            <b style="margin-left: 4rem; font-size: 20px"> Miembros de la Junta directiva</b>  
+                            <br>
+                            <div class="container d-flex" style="gap: 5px">
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn-dark" style=" background-color: green"type="button">Nomina de la Junta Directiva</button><br>
+                                    <button class="btn-dark" type="button">Libro de Actas</button>
+                                </div>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn-dark btn-primary" type="button">Padrón</button><br>
+                                    <button class="btn-dark" style=" background-color: green" type="button">Acta de Constitución</button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"><b>GENERAR RESOLUCIÒN</b></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade w-100 h-100" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark" style="color: white">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalToggleLabel">INFORME TECNICO</h5>                                    
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div style="margin: 10px">                                    
+                                <b>Fecha</b>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">DD:MM:YYYY</span></div>
+                                <b>HORA DE ENTREGA</b>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">00:00:00</span></div>
+                                <b>ASUNTO</b>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">Registrasce como organizacion reconocida por la municipalidad</span></div>
+                                <b>EXPOSICION DE HECHOS</b>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">El pasado 07 de julio de 2022, la ORGANIZACION PUEBLA emitio su solicitud para su reconocimiento, por la cual se tomo como vigencia el dia dado.</span></div>
+                                <b>ANÀLISIS DE SITUACIÒN</b>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">Se concluyo que la ORGANIZACION PUEBLA se dedicaba a las actividades deportivas.</span></div>
+                                <b>RESULTAODS OBTENIDOS</b>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">La vigencia entra en inicio desde el dia 07 julio de 2022 y es concretada hoy 11 de julio de 2022 su reconocimiento por la municipalidad.</span></div>
+                                <b>RECOMENDACIONES O CONCLUSIONES</b>
+                                <div class="col row-cols"style="border: solid 2px gray"><span class="class">Ninguna encontrada.</span></div>
+                            </div>                     
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">REGRESAR</button>
+                            <a class="btn btn-primary" style="background-color: green" th:href="@{/auth/main/mainds}" role="button">EMITIR RESOLUCIÒN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>                     
+        </div>      
     </body>
 </html>

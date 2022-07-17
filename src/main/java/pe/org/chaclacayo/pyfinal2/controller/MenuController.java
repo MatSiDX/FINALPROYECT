@@ -19,12 +19,7 @@ public class MenuController {
     @GetMapping
     public String main(){
         return "main";
-    }
-    
-    @GetMapping("/mainus")
-    public String mainus(){
-        return "mainus";
-    }
+    }    
     
     @GetMapping("/mainmp")
     public String mainmp(){
@@ -39,6 +34,11 @@ public class MenuController {
      @GetMapping("/mainds")
     public String mainds(){
         return "mainds";
+    }
+    
+     @GetMapping("/mainos")
+    public String mainos(){
+        return "mainos";
     }
     
         @GetMapping("/registrar")

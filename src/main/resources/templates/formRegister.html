@@ -10,8 +10,10 @@
         <link th:href="@{/css/estilos.css}" rel="stylesheet" />
     </head>
     <body>
-        <nav class="nav bg-white">
-            <img src="https://i.pinimg.com/originals/91/da/d8/91dad8979b4ecfbabd6110bbb10e32c7.jpg" style="width: 15%;height: 100%"/>
+        <nav class="nav">
+            <div class="navbar-nav d-grid" style="width: 18%" >
+                <a href="http://www.munichaclacayo.gob.pe/portals/"  style="width: 100%"><img class=" btn"src="https://media.discordapp.net/attachments/867892972111265833/997017267084730498/Logo_muni-removebg-preview.png" style="width: 100%;"/></a>
+            </div>  
 
         </nav>
         <div class="container mt-5 p-5 w-30" style="background-color: rgba(2,  2, 0, 0.6);" >  
@@ -52,7 +54,7 @@
                                 <h5 class="text-white">DIRECCIÓN</h5>
                                 <div><input type="text" class="form-control" placeholder="Dirección"></div>
 
-                                <div><form method="POST">
+                                <div><form>
                                         <h5 class="text-white">CONTRASEÑA</h5>
                                         <div class="form-row">
                                             <div class="col">
@@ -67,7 +69,7 @@
                         </div>
                     </div>
 
-                    <form  th:action="@{/}" class="mb-3 d-flex justify-content-center mt-3" >
+                    <form  th:action="@{/login}" class="mb-3 d-flex justify-content-center mt-3" >
                         <div  class="d-grid gap-2 h-auto" >                    
                             <input  type="submit" value="Registrarme" class="btn" style="background-color: rgb(247,180,0)">
                         </div>  
