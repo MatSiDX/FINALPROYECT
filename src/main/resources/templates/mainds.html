@@ -94,40 +94,12 @@
                                         </tr>
                                     </thead>
                                     <tbody> 
-                                        <tr>
-                                            <th scope="col">1</th>
-                                            <th scope="col">Elias</th>
-                                            <th scope="col">Cabanillas Astochado</th>                                                    
-                                            <th scope="col">74859645</th>
-                                            <th scope="col">Presidente</th> 
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">2</th>
-                                            <th scope="col">Juan</th>
-                                            <th scope="col">Ramirez Sabedra</th>                                                    
-                                            <th scope="col">75815985</th>
-                                            <th scope="col">Vice Presidentee</th> 
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">3</th>
-                                            <th scope="col">Marta</th>
-                                            <th scope="col">Mendoza Paredes</th>                                                    
-                                            <th scope="col">71725896</th>
-                                            <th scope="col">Secretario</th> 
-                                        </tr>
-                                        <tr>
-                                            <th scope="col">4</th>
-                                            <th scope="col">Ester</th>
-                                            <th scope="col">Cifuentes Ricra</th>                                                    
-                                            <th scope="col">70526485</th>
-                                            <th scope="col">Vocal</th> 
-                                        </tr>                                        
-                                        <tr>
-                                            <th scope="col">5</th>
-                                            <th scope="col">Mathieu</th>
-                                            <th scope="col">Benavente Espinoza</th>                                                    
-                                            <th scope="col">70526485</th>
-                                            <th scope="col">Vocal</th> 
+                                        <tr th:each="jun :${junta}">
+                                            <td th:text="${jun.idjunta}"></td>
+                                            <td th:text="${jun.nombre_junta}"></td>
+                                            <td th:text="${jun.apellidos}"></td>
+                                            <td th:text="${jun.dni}"></td>
+                                            <td th:text="${jun.cargo}"></td>                                                                                        
                                         </tr>                                                
                                     </tbody>
                                 </table>
